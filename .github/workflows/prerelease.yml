@@ -27,3 +27,4 @@ jobs:
         with:
           automatic_release_tag: ${{ steps.bump-semver.outputs.new_version }}
           prerelease: true
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
